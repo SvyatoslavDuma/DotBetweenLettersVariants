@@ -63,7 +63,7 @@ public class Main {
         return result;
     }
 
-    private static String getResultString(String combination, List<String> pairs) {
+    public static String getResultString(String combination, List<String> pairs) {
         StringBuilder sb = new StringBuilder();
         char[] combToChar = combination.toCharArray();
 
@@ -88,7 +88,7 @@ public class Main {
     }
 
 
-    private static String convertToBinary(int bits, int number) {
+    public static String convertToBinary(int bits, int number) {
         String binaryString = Integer.toBinaryString(number);
 
         StringBuilder paddedBinaryString = new StringBuilder(bits);
